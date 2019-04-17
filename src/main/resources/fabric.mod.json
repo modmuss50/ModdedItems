@@ -1,10 +1,17 @@
 {
+  "schemaVersion": 1,
   "id": "modded_items",
   "name": "Modded Items",
   "description": "Adds a creative tab for all modded items",
   "version": "1.0.0",
-  "initializer": "me.modmuss50.moddeditems.ModdedItems",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.modmuss50.moddeditems.ModdedItems"
+    ]
+  },
   "requires": {
+    "fabricloader": ">=0.4.0",
     "fabric": "*"
   }
 }

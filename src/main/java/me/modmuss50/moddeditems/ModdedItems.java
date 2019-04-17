@@ -11,7 +11,7 @@ public class ModdedItems implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
-		FabricItemGroupBuilder.create(new Identifier("fabric", "modded")).stacksForDisplay(itemStacks -> Registry.ITEM.forEach(item -> {
+		FabricItemGroupBuilder.create(new Identifier("fabric", "modded")).appendItems(itemStacks -> Registry.ITEM.forEach(item -> {
 			if(!Registry.ITEM.getId(item).getNamespace().equals("minecraft")){
 				itemStacks.add(new ItemStack(item));
 			}
