@@ -10,7 +10,7 @@
       "me.modmuss50.moddeditems.ModdedItems"
     ]
   },
-  "requires": {
+  "depends": {
     "fabricloader": ">=0.4.0",
     "fabric": "*"
   }
